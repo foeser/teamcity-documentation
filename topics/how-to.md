@@ -1025,7 +1025,7 @@ Further recommendations:
 ## Use an External Tool that My Build Relies on
 
 If you need to use specific external tool to be installed on a build agent to run your builds, you have the following options:
-* Install and register the tool in TeamCity: 
+* Install and register the tool in TeamCity (only for TeamCity On-Premises): 
   1. Install the tool on all the agents that will run the build. This can be done manually or via an automated script. For simple file distribution also see [Installing Agent Tools](installing-agent-tools.md)
   2. Add a property into `buildAgent.properties` file (or add environment variable to the system) with the tool home location as the value.
   3. Add agent requirement for the property in the build configuration.
