@@ -133,7 +133,7 @@ The path to the Maven installation is taken from the `M2_HOME` environment varia
 The bundled version is used as default. See how to [change the defaults](installing-agent-tools.md).
 {product="tc"}
 
-The bundled version is used as default. See how to [change the defaults](installing-agent-tools.md).
+The bundled version is used as default.
 {product="tcc"}
 
 </td></tr><tr>
