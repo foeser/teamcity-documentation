@@ -9,7 +9,7 @@ Before you can start customizing projects and creating build configurations, you
 {product="tc"}
 
 Before you can start customizing projects and creating build configurations, you need to add and configure [build agents](build-agent.md). Review the [agent-server communication](#Agent-Server+Data+Transfers) and [Prerequisites](#Prerequisites) sections before proceeding with agent installation. Make sure to also read our [security notes](security-notes.md#Build+Agents) on maintaining build agents and [licensing policy](teamcity-cloud-subscription-and-licensing.md) on adding new agents.
-{product="tc"}
+{product="tcc"}
 
 <tip product="tc">
 
