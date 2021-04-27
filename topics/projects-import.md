@@ -90,8 +90,8 @@ If the conflicts have not been resolved before importing, you can find the confl
 ## Importing projects
 {product="tcc"}
 
-On the source TeamCity server:
-* [Create a usual backup](creating-backup-from-teamcity-web-ui.md) file containing the projects to be imported.
+On the source TeamCity On-Premises server:
+* Create a [backup file](https://www.jetbrains.com/help/teamcity/creating-backup-from-teamcity-web-ui.html) containing the projects to be imported.
 
 On the target TeamCity server:
 * Go to the __Server Administration__ area and select __Project Import__ on the left. Upload your project settings and follow the wizard. When the import finishes, TeamCity will display the results.
@@ -106,8 +106,9 @@ There is a number of limitations regarding the import:
 * Running builds and the build queue are not included in the backup and not imported.
 * Internal ids (like ids of the builds) are not preserved during import. This means that URLs to the build results pages from the old server will appear broken even if redirected to the new server as build ids change on importing.
 * The backup files do not contain artifacts and logs (build logs are stored under build artifacts), so these are not imported automatically, but TeamCity provides scripts to move them [manually](#Moving+artifacts+and+logs).
+{product="tc"}
 * Global server settings (authentication schemes, custom roles, and so on) are not imported.
-* Import to TeamCity Cloud: build artifacts.
+* Import to TeamCity Cloud: build artifacts and logs.
 
 <note>
 
@@ -129,4 +130,5 @@ The directory contains the following:
 * conflicting files' folder, containing all data which has been merged
 * mappings, containing mapping of the fields in the source and target databases
 * scripts for copying artifacts and logs (see the section [above](#Moving+artifacts+and+logs))
+{product="tc"}
 * import report, listing import results including the information on the data which has not been imported (if any)
